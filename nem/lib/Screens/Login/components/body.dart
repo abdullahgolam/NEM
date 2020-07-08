@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nem/Screens/Login/components/background.dart';
+import 'package:nem/Screens/Signup/signup_screen.dart';
 import 'package:nem/components/already_have_an_account_check.dart';
 import 'package:nem/components/rounded_button.dart';
 import 'package:nem/components/rounded_input_field.dart';
@@ -31,7 +32,7 @@ class Body extends StatelessWidget {
           SizedBox(height: size.height * 0.03),
           RoundedInputField(
             hintText: "You Email",
-            onChange: (value) {},
+            onChanged: (value) {},
           ),
           RoundedPasswordField(
             onChanged: (value) {},
@@ -42,7 +43,16 @@ class Body extends StatelessWidget {
           ),
           SizedBox(height: size.height * 0.03),
           AlreadyHaveAnAccountCheck(
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return SignUpScreen();
+                  },
+                ),
+              );
+            },
           )
         ],
       ),

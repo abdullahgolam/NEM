@@ -5,12 +5,12 @@ import 'package:nem/constants.dart';
 class RoundedInputField extends StatelessWidget {
   final String hintText;
   final IconData icon;
-  final ValueChanged<String> onChange;
+  final ValueChanged<String> onChanged;
   const RoundedInputField({
     Key key,
     this.hintText,
     this.icon = Icons.person,
-    this.onChange,
+    this.onChanged,
   }) : super(key: key);
 
   @override
@@ -18,7 +18,7 @@ class RoundedInputField extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return TextFieldContainer(
       child: TextField(
-        onChanged: onChange,
+        onChanged: onChanged,
         decoration: InputDecoration(
           icon: Icon(
             icon,
