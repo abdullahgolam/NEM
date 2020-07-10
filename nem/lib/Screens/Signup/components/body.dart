@@ -24,8 +24,12 @@ class Body extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             SizedBox(height: size.height * 0.03),
-            SvgPicture.asset(
-              "assets/icons/signup.svg",
+//            SvgPicture.asset(
+//              "assets/icons/signup.svg",
+//              height: size.height * 0.35,
+//            ),
+            Image.asset(
+              "assets/icons/HngcBzxf_400x400.jpg",
               height: size.height * 0.35,
             ),
             RoundedInputField(
@@ -53,24 +57,24 @@ class Body extends StatelessWidget {
                 );
               },
             ),
-            OrDivider(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                SocalIcon(
-                  iconSrc: "assets/icons/facebook.svg",
-                  press: () {},
-                ),
-                SocalIcon(
-                  iconSrc: "assets/icons/twitter.svg",
-                  press: () {},
-                ),
-                SocalIcon(
-                  iconSrc: "assets/icons/google-plus.svg",
-                  press: () {},
-                ),
-              ],
-            )
+            // OrDivider(),
+//            Row(
+//              mainAxisAlignment: MainAxisAlignment.center,
+//              children: <Widget>[
+//                SocalIcon(
+//                  iconSrc: "assets/icons/facebook.svg",
+//                  press: () {},
+//                ),
+//                SocalIcon(
+//                  iconSrc: "assets/icons/twitter.svg",
+//                  press: () {},
+//                ),
+//                SocalIcon(
+//                  iconSrc: "assets/icons/google-plus.svg",
+//                  press: () {},
+//                ),
+//              ],
+//            )
           ],
         ),
       ),
