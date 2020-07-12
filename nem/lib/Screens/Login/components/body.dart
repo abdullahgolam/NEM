@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nem/Screens/HomeStatistics/home_statistics.dart';
 import 'package:nem/Screens/Login/components/background.dart';
 import 'package:nem/Screens/Signup/signup_screen.dart';
 import 'package:nem/components/already_have_an_account_check.dart';
@@ -39,18 +40,27 @@ class Body extends StatelessWidget {
           ),
           RoundedButton(
             text: "LOGIN",
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return MaterialApp(
+                    debugShowCheckedModeBanner: false,
+                    title: "NEM",
+                    home: HomeStatistics(),
+                  );
+                }),
+              );
+            },
           ),
           SizedBox(height: size.height * 0.03),
           AlreadyHaveAnAccountCheck(
             press: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) {
-                    return SignUpScreen();
-                  },
-                ),
+                MaterialPageRoute(builder: (context) {
+                  return SignUpScreen();
+                }),
               );
             },
           )
