@@ -66,7 +66,7 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                         fontWeight: FontWeight.bold, fontSize: 18, height: 1.5),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),

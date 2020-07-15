@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nem/Screens/Login/login_screen.dart';
+import 'package:nem/Screens/NEOMStatistics/neom_statistics.dart';
 import 'package:nem/components/rounded_button.dart';
 import 'package:nem/constants.dart';
 import 'background.dart';
@@ -43,7 +44,16 @@ class Body extends StatelessWidget {
               text: "Visitor Login",
               color: kPrimaryLightColor,
               textColor: Colors.black,
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return NeomStatistics();
+                    },
+                  ),
+                );
+              },
             ),
           ],
         ),
