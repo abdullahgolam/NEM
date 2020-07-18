@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nem/Screens/ManageHome/manage_home.dart';
 import 'package:nem/Screens/NEOMStatistics/neom_statistics.dart';
+import 'package:nem/Screens/Welcome/welcome_screen.dart';
 import 'package:nem/constants.dart';
 
 class HomeStatistics extends StatefulWidget {
@@ -60,11 +62,29 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                 margin: const EdgeInsets.all(30),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 30),
-                  child: Text(
-                    'Details of Manufacturers and Appliances is available here',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 18, height: 1.5),
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        'Details of Manufacturers and Appliances is available ',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                            height: 1.5),
+                      ),
+                      GestureDetector(
+                        // Navigator
+                        child: Text(
+                          "here",
+                          style: TextStyle(
+                              color: kPrimaryColor,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                              height: 1.5,
+                              decoration: TextDecoration.underline),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -72,11 +92,7 @@ class _HomeStatisticsState extends State<HomeStatistics> {
           ),
         ),
         drawer: Drawer(
-          // Add a ListView to the drawer. This ensures the user can scroll
-          // through the options in the drawer if there isn't enough vertical
-          // space to fit everything.
           child: ListView(
-            // Important: Remove any padding from the ListView.
             padding: EdgeInsets.zero,
             children: <Widget>[
               DrawerHeader(
@@ -127,7 +143,7 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                   );
                 },
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 10),
               ListTile(
                 leading: Image.asset(
                   "assets/icons/HngcBzxf_400x400.jpg",
@@ -154,7 +170,34 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                   );
                 },
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 10),
+              ListTile(
+                leading: Image.asset(
+                  "assets/icons/icons8-mobile-home-80.png",
+                  height: size.height * 0.20,
+                ),
+//                leading: Icon(
+//                  Icons.help_outline,
+//                  color: kPrimaryColor,
+//                  size: size.height * 0.07,
+//                ),
+                title: Text(
+                  'Manage Home',
+                  style: TextStyle(
+                      color: kPrimaryColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
+                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return ManageHome();
+                    }),
+                  );
+                },
+              ),
+              SizedBox(height: 10),
               ListTile(
                 leading: Image.asset(
                   "assets/icons/icons8-available-updates-80.png",
@@ -179,7 +222,7 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                   Navigator.pop(context);
                 },
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 10),
               ListTile(
                 leading: Image.asset(
                   "assets/icons/icons8-good-quality-80.png",
@@ -204,57 +247,7 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                   Navigator.pop(context);
                 },
               ),
-              SizedBox(height: 30),
-              ListTile(
-                leading: Image.asset(
-                  "assets/icons/icons8-mobile-home-80.png",
-                  height: size.height * 0.20,
-                ),
-//                leading: Icon(
-//                  Icons.help_outline,
-//                  color: kPrimaryColor,
-//                  size: size.height * 0.07,
-//                ),
-                title: Text(
-                  'Manage Home',
-                  style: TextStyle(
-                      color: kPrimaryColor,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
-                ),
-                onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-              SizedBox(height: 30),
-              ListTile(
-                leading: Image.asset(
-                  "assets/icons/icons8-room-80.png",
-                  height: size.height * 0.20,
-                ),
-//                leading: Icon(
-//                  Icons.help_outline,
-//                  color: kPrimaryColor,
-//                  size: size.height * 0.07,
-//                ),
-                title: Text(
-                  'Manage Rooms',
-                  style: TextStyle(
-                      color: kPrimaryColor,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
-                ),
-                onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-              SizedBox(height: 30),
+              SizedBox(height: 10),
               ListTile(
                 leading: Icon(
                   Icons.help_outline,
@@ -275,16 +268,28 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                   Navigator.pop(context);
                 },
               ),
-              SizedBox(height: 70),
+              SizedBox(height: 25),
               Container(
-                child: Center(
-                  child: Icon(
-                    Icons.settings_power,
-                    color: kPrimaryColor,
-                    size: size.height * 0.07,
-                  ),
+                child: Column(
+                  children: <Widget>[
+                    IconButton(
+                        icon: Icon(
+                          Icons.settings_power,
+                          color: kPrimaryColor,
+                          size: size.height * 0.07,
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) {
+                              return WelcomeScreen();
+                            }),
+                          );
+                        }),
+                  ],
                 ),
-              )
+              ),
+              SizedBox(height: 25)
             ],
           ),
         ),

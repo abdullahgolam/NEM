@@ -200,13 +200,29 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                   margin: const EdgeInsets.all(30),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 30),
-                    child: Text(
-                      'Details of Manufacturers and Appliances is available here',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          height: 1.5),
+                    child: Column(
+                      children: <Widget>[
+                        Text(
+                          'Details of Manufacturers and Appliances is available ',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                              height: 1.5),
+                        ),
+                        GestureDetector(
+                          // Navigator
+                          child: Text(
+                            "here",
+                            style: TextStyle(
+                                color: kPrimaryColor,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                                height: 1.5,
+                                decoration: TextDecoration.underline),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
