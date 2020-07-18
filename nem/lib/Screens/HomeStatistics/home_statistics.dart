@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nem/Screens/NEOMStatistics/neom_statistics.dart';
 import 'package:nem/constants.dart';
 
 class HomeStatistics extends StatefulWidget {
@@ -82,30 +83,90 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                 decoration: BoxDecoration(
                   color: kPrimaryLightColor,
                 ),
-                child: Column(
-                  children: <Widget>[
-                    CircleAvatar(
-                      radius: 50,
-                      backgroundImage:
-                          AssetImage("assets/images/PersonAvatar.png"),
-                    ),
-                    SizedBox(height: 10),
-                    Text(
-                      "Welcome, Abdullah Golam",
-                      style: TextStyle(color: kPrimaryColor),
-                    ),
-                  ],
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: <Widget>[
+                      CircleAvatar(
+                        radius: 50,
+                        backgroundImage:
+                            AssetImage("assets/images/PersonAvatar.png"),
+                      ),
+                      SizedBox(height: 10),
+                      Text(
+                        "Welcome, Abdullah Golam",
+                        style: TextStyle(color: kPrimaryColor),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               SizedBox(height: 30),
               ListTile(
-                leading: Icon(
-                  Icons.home,
-                  color: kPrimaryColor,
-                  size: size.height * 0.07,
+                leading: Image.asset(
+                  "assets/icons/icons8-home-80.png",
+                  height: size.height * 0.20,
                 ),
+//                leading: Icon(
+//                  Icons.home,
+//                  color: kPrimaryColor,
+//                  size: size.height * 0.07,
+//                ),
                 title: Text(
-                  'Home',
+                  'Home Statistics',
+                  style: TextStyle(
+                      color: kPrimaryColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
+                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return HomeStatistics();
+                    }),
+                  );
+                },
+              ),
+              SizedBox(height: 30),
+              ListTile(
+                leading: Image.asset(
+                  "assets/icons/HngcBzxf_400x400.jpg",
+                  height: size.height * 0.20,
+                ),
+//                leading: Icon(
+//                  Icons.help_outline,
+//                  color: kPrimaryColor,
+//                  size: size.height * 0.07,
+//                ),
+                title: Text(
+                  'NEOM Statistics',
+                  style: TextStyle(
+                      color: kPrimaryColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
+                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return NeomStatistics();
+                    }),
+                  );
+                },
+              ),
+              SizedBox(height: 30),
+              ListTile(
+                leading: Image.asset(
+                  "assets/icons/icons8-available-updates-80.png",
+                  height: size.height * 0.20,
+                ),
+//                leading: Icon(
+//                  Icons.help_outline,
+//                  color: kPrimaryColor,
+//                  size: size.height * 0.07,
+//                ),
+                title: Text(
+                  'Appliance: Available or Allowed in NEOM',
                   style: TextStyle(
                       color: kPrimaryColor,
                       fontSize: 18,
@@ -120,13 +181,17 @@ class _HomeStatisticsState extends State<HomeStatistics> {
               ),
               SizedBox(height: 30),
               ListTile(
-                leading: Icon(
-                  Icons.help_outline,
-                  color: kPrimaryColor,
-                  size: size.height * 0.07,
+                leading: Image.asset(
+                  "assets/icons/icons8-good-quality-80.png",
+                  height: size.height * 0.20,
                 ),
+//                leading: Icon(
+//                  Icons.help_outline,
+//                  color: kPrimaryColor,
+//                  size: size.height * 0.07,
+//                ),
                 title: Text(
-                  'Test',
+                  'Recommended appliances',
                   style: TextStyle(
                       color: kPrimaryColor,
                       fontSize: 18,
@@ -141,13 +206,42 @@ class _HomeStatisticsState extends State<HomeStatistics> {
               ),
               SizedBox(height: 30),
               ListTile(
-                leading: Icon(
-                  Icons.help_outline,
-                  color: kPrimaryColor,
-                  size: size.height * 0.07,
+                leading: Image.asset(
+                  "assets/icons/icons8-mobile-home-80.png",
+                  height: size.height * 0.20,
                 ),
+//                leading: Icon(
+//                  Icons.help_outline,
+//                  color: kPrimaryColor,
+//                  size: size.height * 0.07,
+//                ),
                 title: Text(
-                  'Test',
+                  'Manage Home',
+                  style: TextStyle(
+                      color: kPrimaryColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
+                ),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+              ),
+              SizedBox(height: 30),
+              ListTile(
+                leading: Image.asset(
+                  "assets/icons/icons8-room-80.png",
+                  height: size.height * 0.20,
+                ),
+//                leading: Icon(
+//                  Icons.help_outline,
+//                  color: kPrimaryColor,
+//                  size: size.height * 0.07,
+//                ),
+                title: Text(
+                  'Manage Rooms',
                   style: TextStyle(
                       color: kPrimaryColor,
                       fontSize: 18,

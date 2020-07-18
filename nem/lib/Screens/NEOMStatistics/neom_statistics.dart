@@ -79,15 +79,15 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        Icon(
-                          Icons.help_outline,
-                          color: kPrimaryColor,
-                          size: size.height * 0.12,
-                        ),
-//                        Image.asset(
-//                          "assets/icons/icons8-bill-80.png",
-//                          height: size.height * 0.20,
+//                        Icon(
+//                          Icons.help_outline,
+//                          color: kPrimaryColor,
+//                          size: size.height * 0.12,
 //                        ),
+                        Image.asset(
+                          "assets/icons/icons8-rpu-80.png",
+                          height: size.height * 0.20,
+                        ),
                         Text(
                           "RPU Now",
                           style: TextStyle(
@@ -107,12 +107,22 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                   children: <Widget>[
                     Column(
                       children: <Widget>[
+//                        Icon(
+//                          Icons.help_outline,
+//                          color: kPrimaryColor,
+//                          size: size.height * 0.12,
+//                        ),
                         Image.asset(
-                          "assets/icons/icons8-bill-80.png",
+                          "assets/icons/icons8-peak-performers-80.png",
                           height: size.height * 0.20,
                         ),
                         Text(
-                          "Current Bill",
+                          "Current",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                        Text(
+                          "Peak-Hours",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
@@ -125,17 +135,27 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                     ),
                     Column(
                       children: <Widget>[
+//                        Icon(
+//                          Icons.help_outline,
+//                          color: kPrimaryColor,
+//                          size: size.height * 0.12,
+//                        ),
                         Image.asset(
-                          "assets/icons/icons8-bill-80.png",
+                          "assets/icons/icons8-last-24-hours-80.png",
                           height: size.height * 0.20,
                         ),
                         Text(
-                          "Current Bill",
+                          "Current",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "---- SR",
+                          "LR-Hours",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                        Text(
+                          "----",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
@@ -148,17 +168,22 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                   children: <Widget>[
                     Column(
                       children: <Widget>[
+//                        Icon(
+//                          Icons.help_outline,
+//                          color: kPrimaryColor,
+//                          size: size.height * 0.12,
+//                        ),
                         Image.asset(
-                          "assets/icons/icons8-bill-80.png",
+                          "assets/icons/icons8-expected-80.png",
                           height: size.height * 0.20,
                         ),
                         Text(
-                          "Current Bill",
+                          "Expected Lowest Hours",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "---- SR",
+                          "---- hrs.",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
