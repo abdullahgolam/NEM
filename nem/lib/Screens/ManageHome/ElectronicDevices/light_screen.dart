@@ -16,7 +16,16 @@ class _LightScreenState extends State<LightScreen> {
           backgroundColor: kPrimaryColor,
           title: Text("Light Screen"),
         ),
-        body: Container(),
+        body: Container(
+          width: double.infinity,
+          height: size.height,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              // add image wgt here
+            ],
+          ),
+        ),
       ),
     );
   }
