@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/fan_screen.dart';
 import 'package:nem/Screens/ManageHome/ElectronicDevices/light_screen.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/washin_machine_screen.dart';
 import 'package:nem/constants.dart';
 
 class WashRoom extends StatefulWidget {
@@ -18,6 +20,7 @@ class _WashRoomState extends State<WashRoom> {
           title: Text("Wash Room"),
         ),
         body: Container(
+          decoration: BoxDecoration(color: Colors.purple[50]),
           width: double.infinity,
           height: size.height,
           child: SingleChildScrollView(
@@ -65,18 +68,18 @@ class _WashRoomState extends State<WashRoom> {
                         IconButton(
                           iconSize: size.height * 0.20,
                           icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                              "assets/icons/icons8-washing-machine-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return WashingMachineScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
+                          "Washing Machine",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
@@ -94,99 +97,18 @@ class _WashRoomState extends State<WashRoom> {
                       children: <Widget>[
                         IconButton(
                           iconSize: size.height * 0.20,
-                          icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                          icon: Image.asset("assets/icons/icons8-fan-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return FanScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                            color: kPrimaryColor,
-                          ),
-                        )
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          iconSize: size.height * 0.20,
-                          icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) {
-                                return LightScreen();
-                              }),
-                            );
-                          },
-                        ),
-                        Text(
-                          "Light",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                            color: kPrimaryColor,
-                          ),
-                        )
-                      ],
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          iconSize: size.height * 0.20,
-                          icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) {
-                                return LightScreen();
-                              }),
-                            );
-                          },
-                        ),
-                        Text(
-                          "Light",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                            color: kPrimaryColor,
-                          ),
-                        )
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          iconSize: size.height * 0.20,
-                          icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) {
-                                return LightScreen();
-                              }),
-                            );
-                          },
-                        ),
-                        Text(
-                          "Light",
+                          "Fan",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,

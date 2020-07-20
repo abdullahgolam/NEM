@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/ac_screen.dart';
 import 'package:nem/Screens/ManageHome/ElectronicDevices/light_screen.dart';
 import 'package:nem/constants.dart';
 
@@ -18,6 +19,7 @@ class _DiningRoomState extends State<DiningRoom> {
           title: Text("Dining Room"),
         ),
         body: Container(
+          decoration: BoxDecoration(color: Colors.purple[50]),
           width: double.infinity,
           height: size.height,
           child: SingleChildScrollView(
@@ -65,128 +67,18 @@ class _DiningRoomState extends State<DiningRoom> {
                         IconButton(
                           iconSize: size.height * 0.20,
                           icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                              "assets/icons/icons8-air-conditioner-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return ACScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                            color: kPrimaryColor,
-                          ),
-                        )
-                      ],
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          iconSize: size.height * 0.20,
-                          icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) {
-                                return LightScreen();
-                              }),
-                            );
-                          },
-                        ),
-                        Text(
-                          "Light",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                            color: kPrimaryColor,
-                          ),
-                        )
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          iconSize: size.height * 0.20,
-                          icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) {
-                                return LightScreen();
-                              }),
-                            );
-                          },
-                        ),
-                        Text(
-                          "Light",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                            color: kPrimaryColor,
-                          ),
-                        )
-                      ],
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          iconSize: size.height * 0.20,
-                          icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) {
-                                return LightScreen();
-                              }),
-                            );
-                          },
-                        ),
-                        Text(
-                          "Light",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                            color: kPrimaryColor,
-                          ),
-                        )
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          iconSize: size.height * 0.20,
-                          icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) {
-                                return LightScreen();
-                              }),
-                            );
-                          },
-                        ),
-                        Text(
-                          "Light",
+                          "Air Conditioner",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,

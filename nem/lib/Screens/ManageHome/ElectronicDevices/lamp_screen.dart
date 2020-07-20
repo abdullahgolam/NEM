@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:nem/constants.dart';
 
-class RefrigeratorScreen extends StatefulWidget {
+class LampScreen extends StatefulWidget {
   @override
-  _RefrigeratorScreenState createState() => _RefrigeratorScreenState();
+  _LampScreenState createState() => _LampScreenState();
 }
 
-class _RefrigeratorScreenState extends State<RefrigeratorScreen> {
+class _LampScreenState extends State<LampScreen> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -14,7 +14,7 @@ class _RefrigeratorScreenState extends State<RefrigeratorScreen> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: kPrimaryColor,
-          title: Text("Refrigerator"),
+          title: Text("Lamp"),
         ),
         body: Container(
           decoration: BoxDecoration(color: Colors.purple[50]),
@@ -26,7 +26,7 @@ class _RefrigeratorScreenState extends State<RefrigeratorScreen> {
                 SizedBox(height: 50),
                 Container(
                   child: Image.asset(
-                    "assets/icons/icons8-fridge-80.png",
+                    "assets/icons/icons8-lamp-80.png",
                     width: 150,
                     height: 150,
                     fit: BoxFit.cover,

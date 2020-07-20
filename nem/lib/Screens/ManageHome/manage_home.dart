@@ -23,6 +23,7 @@ class _ManageHomeState extends State<ManageHome> {
           title: Text("Manage Home"),
         ),
         body: Container(
+          decoration: BoxDecoration(color: Colors.purple[50]),
           width: double.infinity,
           height: size.height,
           child: SingleChildScrollView(

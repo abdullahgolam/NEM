@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/ac_screen.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/fan_screen.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/humidifier_screen.dart';
 import 'package:nem/Screens/ManageHome/ElectronicDevices/light_screen.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/play_station_screen.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/tv_screen.dart';
 import 'package:nem/constants.dart';
 
 class LivingRoom extends StatefulWidget {
@@ -18,6 +23,7 @@ class _LivingRoomState extends State<LivingRoom> {
           title: Text("Living Room"),
         ),
         body: Container(
+          decoration: BoxDecoration(color: Colors.purple[50]),
           width: double.infinity,
           height: size.height,
           child: SingleChildScrollView(
@@ -65,18 +71,18 @@ class _LivingRoomState extends State<LivingRoom> {
                         IconButton(
                           iconSize: size.height * 0.20,
                           icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                              "assets/icons/icons8-air-conditioner-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return ACScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
+                          "Air Conditioner",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
@@ -95,18 +101,18 @@ class _LivingRoomState extends State<LivingRoom> {
                         IconButton(
                           iconSize: size.height * 0.20,
                           icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                              "assets/icons/icons8-retro-tv-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return TVScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
+                          "TV",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
@@ -120,18 +126,18 @@ class _LivingRoomState extends State<LivingRoom> {
                         IconButton(
                           iconSize: size.height * 0.20,
                           icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                              "assets/icons/icons8-game-controller-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return PlayStationScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
+                          "Playstation",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
@@ -150,18 +156,18 @@ class _LivingRoomState extends State<LivingRoom> {
                         IconButton(
                           iconSize: size.height * 0.20,
                           icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                              "assets/icons/icons8-humidifier-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return HumidifierScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
+                          "Humidifier",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
@@ -174,19 +180,18 @@ class _LivingRoomState extends State<LivingRoom> {
                       children: <Widget>[
                         IconButton(
                           iconSize: size.height * 0.20,
-                          icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                          icon: Image.asset("assets/icons/icons8-fan-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return FanScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
+                          "Fan",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,

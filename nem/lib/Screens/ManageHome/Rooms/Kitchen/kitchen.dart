@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/dishwasher_screen.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/fan_screen.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/heater_screen.dart';
 import 'package:nem/Screens/ManageHome/ElectronicDevices/light_screen.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/microwave_screen.dart';
+import 'package:nem/Screens/ManageHome/ElectronicDevices/refrigerator_screen.dart';
 import 'package:nem/constants.dart';
 
 class Kitchen extends StatefulWidget {
@@ -18,6 +23,7 @@ class _KitchenState extends State<Kitchen> {
           title: Text("Kitchen"),
         ),
         body: Container(
+          decoration: BoxDecoration(color: Colors.purple[50]),
           width: double.infinity,
           height: size.height,
           child: SingleChildScrollView(
@@ -65,18 +71,18 @@ class _KitchenState extends State<Kitchen> {
                         IconButton(
                           iconSize: size.height * 0.20,
                           icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                              "assets/icons/icons8-microwave-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return MicrowaveScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
+                          "Microwave",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
@@ -94,19 +100,18 @@ class _KitchenState extends State<Kitchen> {
                       children: <Widget>[
                         IconButton(
                           iconSize: size.height * 0.20,
-                          icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                          icon: Image.asset("assets/icons/icons8-fan-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return FanScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
+                          "Fan",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
@@ -120,18 +125,18 @@ class _KitchenState extends State<Kitchen> {
                         IconButton(
                           iconSize: size.height * 0.20,
                           icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                              "assets/icons/icons8-water-heater-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return HeaterScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
+                          "Heater",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
@@ -149,25 +154,25 @@ class _KitchenState extends State<Kitchen> {
                       children: <Widget>[
                         IconButton(
                           iconSize: size.height * 0.20,
-                          icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                          icon:
+                              Image.asset("assets/icons/icons8-fridge-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return RefrigeratorScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
+                          "Refrigerator",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
                             color: kPrimaryColor,
                           ),
-                        )
+                        ),
                       ],
                     ),
                     Column(
@@ -175,24 +180,24 @@ class _KitchenState extends State<Kitchen> {
                         IconButton(
                           iconSize: size.height * 0.20,
                           icon: Image.asset(
-                              "assets/icons/icons8-light-bulb-80.png"),
+                              "assets/icons/icons8-dishwasher-80.png"),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return LightScreen();
+                                return DishwasherScreen();
                               }),
                             );
                           },
                         ),
                         Text(
-                          "Light",
+                          "DishWasher",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
                             color: kPrimaryColor,
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ],

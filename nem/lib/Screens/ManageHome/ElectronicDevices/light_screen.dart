@@ -14,16 +14,79 @@ class _LightScreenState extends State<LightScreen> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: kPrimaryColor,
-          title: Text("Light Screen"),
+          title: Text("Light"),
         ),
         body: Container(
+          decoration: BoxDecoration(color: Colors.purple[50]),
           width: double.infinity,
           height: size.height,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              // add image wgt here
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                SizedBox(height: 50),
+                Container(
+                  child: Image.asset(
+                    "assets/icons/icons8-light-bulb-80.png",
+                    width: 150,
+                    height: 150,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                SizedBox(height: 50),
+                Container(
+                  child: Image.asset(
+                    "assets/icons/icons8-shutdown-90.png",
+                  ),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  "Press to On/Off",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blue),
+                ),
+                SizedBox(height: 100),
+                Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Column(
+                          children: <Widget>[
+                            Container(
+                                child: Image.asset(
+                              "assets/icons/icons8-alarm-512.png",
+                              height: 50,
+                              width: 50,
+                            )),
+                          ],
+                        ),
+                        Column(
+                          children: <Widget>[
+                            Container(
+                                child: Text(
+                              "Set Timer",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 24),
+                            ))
+                          ],
+                        ),
+                        Column(
+                          children: <Widget>[
+                            Container(
+                                child: Text(
+                              "00h 02m",
+                              style: TextStyle(fontSize: 24),
+                            ))
+                          ],
+                        ),
+                      ],
+                    )
+                  ],
+                )
+              ],
+            ),
           ),
         ),
       ),

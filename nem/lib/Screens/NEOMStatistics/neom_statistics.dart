@@ -17,6 +17,7 @@ class _NeomStatisticsState extends State<NeomStatistics> {
           title: Text("NEOM Statistics"),
         ),
         body: Container(
+          decoration: BoxDecoration(color: Colors.purple[50]),
           width: double.infinity,
           height: size.height,
           child: SingleChildScrollView(
