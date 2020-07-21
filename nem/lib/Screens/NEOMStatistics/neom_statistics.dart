@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nem/Screens/Recommended/recommended.dart';
 import 'package:nem/constants.dart';
 
 class NeomStatistics extends StatefulWidget {
@@ -212,7 +213,14 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                               height: 1.5),
                         ),
                         GestureDetector(
-                          // Navigator
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return Recommended();
+                              }),
+                            );
+                          },
                           child: Text(
                             "here",
                             style: TextStyle(

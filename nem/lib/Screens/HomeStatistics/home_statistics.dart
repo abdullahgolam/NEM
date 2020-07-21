@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:nem/Screens/AvailableOrAllowed/available_or_allowed.dart';
 import 'package:nem/Screens/ManageHome/manage_home.dart';
 import 'package:nem/Screens/NEOMStatistics/neom_statistics.dart';
+import 'package:nem/Screens/Recommended/recommended.dart';
 import 'package:nem/Screens/Welcome/welcome_screen.dart';
 import 'package:nem/constants.dart';
 
@@ -74,7 +76,14 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                             height: 1.5),
                       ),
                       GestureDetector(
-                        // Navigator
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) {
+                              return Recommended();
+                            }),
+                          );
+                        },
                         child: Text(
                           "here",
                           style: TextStyle(
@@ -217,10 +226,12 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                       fontWeight: FontWeight.bold),
                 ),
                 onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return AvailableOrAllowed();
+                    }),
+                  );
                 },
               ),
               SizedBox(height: 10),
@@ -242,10 +253,12 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                       fontWeight: FontWeight.bold),
                 ),
                 onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return Recommended();
+                    }),
+                  );
                 },
               ),
               SizedBox(height: 10),
