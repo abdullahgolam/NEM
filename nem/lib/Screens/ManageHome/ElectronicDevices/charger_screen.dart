@@ -46,7 +46,27 @@ class _ChargerScreenState extends State<ChargerScreen> {
                       fontWeight: FontWeight.bold,
                       color: Colors.blue),
                 ),
-                SizedBox(height: 100),
+                SizedBox(height: 20),
+                Container(
+                  padding: EdgeInsets.all(28),
+                  alignment: Alignment.centerLeft,
+                  child: new DropdownButton<String>(
+                    hint: new Text(
+                      "Schedule by",
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    items: <String>['Time', 'Price', 'Deadline']
+                        .map((String value) {
+                      return new DropdownMenuItem<String>(
+                        value: value,
+                        child: new Text(value),
+                      );
+                    }).toList(),
+                    onChanged: (_) {},
+                  ),
+                ),
+                SizedBox(height: 5),
                 Column(
                   children: <Widget>[
                     Row(

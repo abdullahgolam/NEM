@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:nem/constants.dart';
+import 'Rated/air_conditioners.dart';
 
 class Recommended extends StatefulWidget {
   @override
@@ -34,9 +34,19 @@ class _RecommendedState extends State<Recommended> {
                 ),
               ),
               SizedBox(height: 50),
-              Text(
-                "Air Conditioners",
-                style: TextStyle(fontSize: 18),
+              FlatButton(
+                child: Text(
+                  "Air Conditioners",
+                  style: TextStyle(fontSize: 18),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return AirConditionersRating();
+                    }),
+                  );
+                },
               ),
               SizedBox(height: 30),
               Text(
@@ -50,17 +60,17 @@ class _RecommendedState extends State<Recommended> {
               ),
               SizedBox(height: 30),
               Text(
-                " ----- ",
+                "Refrigerator",
                 style: TextStyle(fontSize: 18),
               ),
               SizedBox(height: 30),
               Text(
-                " ----- ",
+                "TV",
                 style: TextStyle(fontSize: 18),
               ),
               SizedBox(height: 30),
               Text(
-                " ----- ",
+                "Heater",
                 style: TextStyle(fontSize: 18),
               ),
             ],

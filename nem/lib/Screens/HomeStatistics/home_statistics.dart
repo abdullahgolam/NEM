@@ -68,7 +68,7 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                   child: Column(
                     children: <Widget>[
                       Text(
-                        'Details of Manufacturers and Appliances is available ',
+                        'Efficiency History of available appliance ',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -207,33 +207,34 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                   );
                 },
               ),
-              SizedBox(height: 10),
-              ListTile(
-                leading: Image.asset(
-                  "assets/icons/icons8-available-updates-80.png",
-                  height: size.height * 0.20,
-                ),
-//                leading: Icon(
-//                  Icons.help_outline,
-//                  color: kPrimaryColor,
-//                  size: size.height * 0.07,
+//              SizedBox(height: 10),
+//              ListTile(
+//                leading: Image.asset(
+//                  "assets/icons/icons8-available-updates-80.png",
+//                  height: size.height * 0.20,
 //                ),
-                title: Text(
-                  'Appliance: Available or Allowed in NEOM',
-                  style: TextStyle(
-                      color: kPrimaryColor,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) {
-                      return AvailableOrAllowed();
-                    }),
-                  );
-                },
-              ),
+////                leading: Icon(
+////                  Icons.help_outline,
+////                  color: kPrimaryColor,
+////                  size: size.height * 0.07,
+////                ),
+//                title: Text(
+//                  'Appliance: Available or Allowed in NEOM',
+//                  style: TextStyle(
+//                      color: kPrimaryColor,
+//                      fontSize: 18,
+//                      fontWeight: FontWeight.bold),
+//                ),
+//                onTap: () {
+//                  Navigator.push(
+//                    context,
+//                    MaterialPageRoute(builder: (context) {
+//                      return AvailableOrAllowed();
+//                    }),
+//                  );
+//                },
+//              ),
+
               SizedBox(height: 10),
               ListTile(
                 leading: Image.asset(

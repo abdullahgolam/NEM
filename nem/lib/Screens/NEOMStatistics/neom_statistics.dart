@@ -102,11 +102,6 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                         ),
                       ],
                     ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
                     Column(
                       children: <Widget>[
 //                        Icon(
@@ -135,36 +130,41 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                         ),
                       ],
                     ),
-                    Column(
-                      children: <Widget>[
-//                        Icon(
-//                          Icons.help_outline,
-//                          color: kPrimaryColor,
-//                          size: size.height * 0.12,
-//                        ),
-                        Image.asset(
-                          "assets/icons/icons8-last-24-hours-80.png",
-                          height: size.height * 0.20,
-                        ),
-                        Text(
-                          "Current",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18),
-                        ),
-                        Text(
-                          "LR-Hours",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18),
-                        ),
-                        Text(
-                          "----",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18),
-                        ),
-                      ],
-                    ),
                   ],
                 ),
+//                Row(
+//                  mainAxisAlignment: MainAxisAlignment.center,
+//                  children: <Widget>[
+//                    Column(
+//                      children: <Widget>[
+////                        Icon(
+////                          Icons.help_outline,
+////                          color: kPrimaryColor,
+////                          size: size.height * 0.12,
+////                        ),
+//                        Image.asset(
+//                          "assets/icons/icons8-last-24-hours-80.png",
+//                          height: size.height * 0.20,
+//                        ),
+//                        Text(
+//                          "Current",
+//                          style: TextStyle(
+//                              fontWeight: FontWeight.bold, fontSize: 18),
+//                        ),
+//                        Text(
+//                          "LR-Hours",
+//                          style: TextStyle(
+//                              fontWeight: FontWeight.bold, fontSize: 18),
+//                        ),
+//                        Text(
+//                          "----",
+//                          style: TextStyle(
+//                              fontWeight: FontWeight.bold, fontSize: 18),
+//                        ),
+//                      ],
+//                    ),
+//                  ],
+//                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
@@ -205,7 +205,7 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                     child: Column(
                       children: <Widget>[
                         Text(
-                          'Details of Manufacturers and Appliances is available ',
+                          'Efficiency History of available appliance ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontWeight: FontWeight.bold,

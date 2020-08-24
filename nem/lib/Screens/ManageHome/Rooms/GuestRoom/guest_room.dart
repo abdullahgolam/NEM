@@ -78,7 +78,7 @@ class _GuestRoomState extends State<GuestRoom> {
                           },
                         ),
                         Text(
-                          "Light",
+                          "Air Conditioner",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
