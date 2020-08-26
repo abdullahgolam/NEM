@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nem/constants.dart';
-import 'Rated/air_conditioners.dart';
+import 'Brands/air_conditioners_company.dart';
 
 class Recommended extends StatefulWidget {
   @override
@@ -43,7 +43,7 @@ class _RecommendedState extends State<Recommended> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) {
-                      return AirConditionersRating();
+                      return AirConditionersCompany();
                     }),
                   );
                 },
