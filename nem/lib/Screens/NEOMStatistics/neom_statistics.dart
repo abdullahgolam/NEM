@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nem/Screens/NEOMStatistics/expected_rpu.dart';
 import 'package:nem/Screens/Recommended/recommended.dart';
 import 'package:nem/constants.dart';
 
@@ -40,12 +41,12 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "Production",
+                          "RPU",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "----",
+                          "2000 mW",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
@@ -68,7 +69,7 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "----",
+                          "1500 mW",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
@@ -86,17 +87,27 @@ class _NeomStatisticsState extends State<NeomStatistics> {
 //                          color: kPrimaryColor,
 //                          size: size.height * 0.12,
 //                        ),
-                        Image.asset(
-                          "assets/icons/icons8-rpu-80.png",
-                          height: size.height * 0.20,
+                        IconButton(
+                          iconSize: size.height * 0.20,
+                          icon: Image.asset(
+                            "assets/icons/icons8-rpu-80.png",
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return ExpectedRPU();
+                              }),
+                            );
+                          },
                         ),
                         Text(
-                          "RPU Now",
+                          "Expected RPU",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "---- SR",
+                          "0.19 SR",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
@@ -114,17 +125,17 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                           height: size.height * 0.20,
                         ),
                         Text(
-                          "Current",
+                          "Expected Time",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "Peak-Hours",
+                          "of Low Rate",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "---- SR",
+                          "0.34 SR",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
@@ -185,7 +196,7 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "---- hrs.",
+                          "08:00 AM",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
