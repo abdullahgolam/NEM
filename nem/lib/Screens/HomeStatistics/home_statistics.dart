@@ -34,7 +34,7 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                 height: size.height * 0.20,
               ),
               Text(
-                "Current Bill ---- SR",
+                "Current Bill 143.56 SR",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               Text(
@@ -50,7 +50,7 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               Text(
-                "---- per/hr",
+                "13.2 per/hr",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               SizedBox(
