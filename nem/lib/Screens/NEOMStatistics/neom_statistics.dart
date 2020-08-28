@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nem/Screens/NEOMStatistics/expected_rpu.dart';
+import 'package:nem/Screens/NEOMStatistics/expected_time_of_low_rate.dart';
 import 'package:nem/Screens/Recommended/recommended.dart';
 import 'package:nem/constants.dart';
 
@@ -120,9 +121,20 @@ class _NeomStatisticsState extends State<NeomStatistics> {
 //                          color: kPrimaryColor,
 //                          size: size.height * 0.12,
 //                        ),
-                        Image.asset(
-                          "assets/icons/icons8-peak-performers-80.png",
-                          height: size.height * 0.20,
+                        IconButton(
+                          iconSize: size.height * 0.20,
+                          icon: Image.asset(
+                            "assets/icons/icons8-peak-performers-80.png",
+                            height: size.height * 0.20,
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return ExpectedLowRate();
+                              }),
+                            );
+                          },
                         ),
                         Text(
                           "Expected Time",

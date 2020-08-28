@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:nem/constants.dart';
 
-class ExpectedTimeOfLowRate extends StatefulWidget {
+class ExpectedLowRate extends StatefulWidget {
   @override
-  _ExpectedTimeOfLowRateState createState() => _ExpectedTimeOfLowRateState();
+  _ExpectedLowRateState createState() => _ExpectedLowRateState();
 }
 
-class _ExpectedTimeOfLowRateState extends State<ExpectedTimeOfLowRate> {
+class _ExpectedLowRateState extends State<ExpectedLowRate> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -14,21 +14,22 @@ class _ExpectedTimeOfLowRateState extends State<ExpectedTimeOfLowRate> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: kPrimaryColor,
-          title: Text("NEOM Statistics"),
+          title: Text("Exected Time of low rate"),
         ),
         body: Container(
           decoration: BoxDecoration(color: Colors.purple[50]),
           width: double.infinity,
           height: size.height,
-          child: SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                Image.asset(
-                  "assets/icons/ExpectedRPU.png",
-                  height: size.height * 10,
-                )
-              ],
-            ),
+          child: Column(
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.all(10),
+                child: Image.asset(
+                  "assets/icons/chart1.png",
+                  height: size.height * 0.50,
+                ),
+              )
+            ],
           ),
         ),
       ),
