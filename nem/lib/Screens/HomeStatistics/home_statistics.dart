@@ -50,7 +50,7 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               Text(
-                "13.2 per/hr",
+                "13.2 Watt/hr",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               SizedBox(
@@ -68,7 +68,7 @@ class _HomeStatisticsState extends State<HomeStatistics> {
                   child: Column(
                     children: <Widget>[
                       Text(
-                        'Efficiency History of available appliance ',
+                        'Efficiency history of available appliance ',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -247,7 +247,7 @@ class _HomeStatisticsState extends State<HomeStatistics> {
 //                  size: size.height * 0.07,
 //                ),
                 title: Text(
-                  'Recommended appliances',
+                  'Recommended Appliances',
                   style: TextStyle(
                       color: kPrimaryColor,
                       fontSize: 18,

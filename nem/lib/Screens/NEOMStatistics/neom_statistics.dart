@@ -42,7 +42,7 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "RPU",
+                          "Production",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
@@ -103,12 +103,12 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                           },
                         ),
                         Text(
-                          "Expected RPU",
+                          "Current RPU",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "0.19 SR",
+                          "0.34 SR",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
@@ -137,17 +137,17 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                           },
                         ),
                         Text(
-                          "Expected Time",
+                          "Expected",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "of Low Rate",
+                          "Low Rate",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                         Text(
-                          "0.34 SR",
+                          "0.19 SR",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 18),
                         ),
@@ -228,7 +228,7 @@ class _NeomStatisticsState extends State<NeomStatistics> {
                     child: Column(
                       children: <Widget>[
                         Text(
-                          'Efficiency History of available appliance ',
+                          'Efficiency history of available appliance ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontWeight: FontWeight.bold,

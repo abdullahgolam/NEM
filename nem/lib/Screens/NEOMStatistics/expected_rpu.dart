@@ -15,7 +15,7 @@ class _ExpectedRPUState extends State<ExpectedRPU> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: kPrimaryColor,
-          title: Text("Expected RPU"),
+          title: Text("Current Electricity Utilization"),
         ),
         body: Container(
           decoration: BoxDecoration(color: Colors.purple[50]),
@@ -42,7 +42,7 @@ class _ExpectedRPUState extends State<ExpectedRPU> {
                           size: size.height * 0.05,
                         ),
                         Text(
-                          'Normal use',
+                          'Low use',
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,

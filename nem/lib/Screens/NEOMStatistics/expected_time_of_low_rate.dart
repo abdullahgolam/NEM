@@ -14,7 +14,7 @@ class _ExpectedLowRateState extends State<ExpectedLowRate> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: kPrimaryColor,
-          title: Text("Exected Time of low rate"),
+          title: Text("Expected RPU Trend"),
         ),
         body: Container(
           decoration: BoxDecoration(color: Colors.purple[50]),

@@ -18,8 +18,20 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Welcome to NEOM Energy Management",
+              "Welcome to NEME",
               style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            Text(
+              "(NEOM Energy Management & Efficiency)",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: size.height * 0.02),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                "The ultimate solution of energy management and efficiency for NEOM City and its residents",
+                textAlign: TextAlign.center,
+              ),
             ),
             SizedBox(height: size.height * 0.05),
             Image.asset(

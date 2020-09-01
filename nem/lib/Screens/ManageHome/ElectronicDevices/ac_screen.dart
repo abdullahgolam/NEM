@@ -56,8 +56,11 @@ class _ACScreenState extends State<ACScreen> {
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
-                    items: <String>['Time', 'Price', 'Deadline']
-                        .map((String value) {
+                    items: <String>[
+                      'Time(Start working at fix time)',
+                      'RPU(Start working at lowest rate)',
+                      'Deadline(Complete task before deadline)'
+                    ].map((String value) {
                       return new DropdownMenuItem<String>(
                         value: value,
                         child: new Text(value),

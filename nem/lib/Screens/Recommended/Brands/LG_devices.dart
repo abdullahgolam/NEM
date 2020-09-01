@@ -98,7 +98,7 @@ class _LGDevicesState extends State<LGDevices> {
                     ),
                     DataColumn(
                       label: Text(
-                        'BUT',
+                        'BTU',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.w900,
@@ -214,7 +214,7 @@ class _LGDevicesState extends State<LGDevices> {
                     ),
                     DataColumn(
                       label: Text(
-                        'BUT',
+                        'BTU',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.w900,
@@ -325,7 +325,7 @@ class _LGDevicesState extends State<LGDevices> {
                     ),
                     DataColumn(
                       label: Text(
-                        'BUT',
+                        'BTU',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.w900,
